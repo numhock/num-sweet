@@ -68,4 +68,11 @@ export default class Timer {
   isRunning() {
     return this.running
   }
+
+   /**
+   * @returns {boolean}
+   */
+  isDeploy() {
+    return this.running
+  }
 }
