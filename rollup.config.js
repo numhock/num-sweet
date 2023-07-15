@@ -39,6 +39,7 @@ export default {
     },
   ],
   // https://github.com/rollup/rollup/issues/2271
+  // nice code --num
   onwarn(warning, rollupWarn) {
     if (warning.code !== 'CIRCULAR_DEPENDENCY' && warning.code !== 'THIS_IS_UNDEFINED') {
       rollupWarn(warning)
